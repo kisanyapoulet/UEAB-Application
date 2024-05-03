@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <script src="graduation.js"></script>
+  
+    <style>
+        
+        .graduation{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .guide li{
+            font-size: 1.2rem;
+        }
+        .head{
+            font-size: 2rem;
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background: ghostwhite;
+            margin: 20px;
+            width: 60%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin-top: 20px;
+        }
+        form input{
+            width: 90%;
+            padding: 5px;
+        }
+        form select{
+            width: 100%;
+            padding: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        .form-group label {
+            font-size: large;
+            font-weight: bold;
+            width: 30%; 
+            text-align: right;
+            padding-right: 10px;
+            margin-left: 10px;
+        }
+
+        .form-group input {
+            width: 90%;
+            margin: 10px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        #SubmitGraduation{
+         cursor: pointer;
+         background: #9990ff;
+        }
+        #SubmitGraduation:hover{
+            background: #4235d2;
+            color: #ffffff;
+        }
+        @media screen and (max-width: 720px) {
+            form{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width: 420px) {
+            form {
+                width: 90%;
+            padding: 10px;
+         
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div style="display: flex;">
+            <div id="menu-toggle" class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <img src="./images/LOGO-BARA-copy-1-7.png" alt="" width="100px" srcset="">
+        </div>
+        <ul id="menus">
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="/supp.html">Supplementary Exams</a></li>
+            <li><a href="/graduation.html">Graduation</a></li>
+            <!-- <li><a href="">Contact Us</a></li>
+            <li><a href="">About Us</a></li> -->
+        </ul>
+        <div class="profile">
+            <div class="image">
+                <img src="/images/user.jpeg" alt="">
+            </div>
+            <p id="welcoming-guest">welcome Guest</p>
+            <button class="logout" id="logout">Logout</button>
+        </div>
+    </nav>
+    <section class="graduation">
+      
+        <form action="">
+            <h1 class="head">Graduation Application</h1>
+        <div id="not-qualified-message" style="display: block; height: calc(100vh - 110px);">
+            <p style="font-size: 1.5rem; color: #333; margin-top: 80px; ">You do not qualify to apply for graduation.</p>
+            <p>You have more than 40 credits hours remaining</p>
+            <p id="chr">You have more than 40 credits hours remaining</p>
+        </div>
+        <div id="applicationDone" style="display: block; height: calc(100vh - 110px);">
+            <p style="font-size: 1.5rem; color: #333; margin-top: 80px; color: green; ">You have Already Sumbmited your Graduation Application</p>
+            <p>Wishing You a happy life here and hereafter.</p>
+        </div>
+
+            <div id="graduation-form">
+            <div class="guide">
+                <h2>General Guidelines</h2>
+                <ol>
+                    <li>You must submit your scanned original High school Certificate</li>
+                    <li>Make sure you have been financially cleared at least one month before graduation</li>
+                    <li>The graduation fee must be paid 6 weeks before Graduation</li>
+                    <li>If you plan to Graduate in absentia, You must submit petition in a writing to the Registrar</li>
+                    <li>You are responsible for any error or omission while filling out this form</li>
+                    <li>Please observe the graduation application period provided</li>
+                  
+                </ol>
+            </div>
+            <h2>COURSES YET TO BE COMPLETED AT UNIVERSITY OF EASTERN AFRICAN, BARATON</h2>
+            <h2>First Semester/Trimester</h2>
+            <table id="First-semester">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Credit Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                   
+                </tbody>
+            </table>
+            <h1>Second Semester/Trimester</h1>
+            <table id="second-semester">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Credit Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <!-- <tr>
+                        <td><input type="text" name="course1"></td>
+                        <td><input type="text" name="courseId1"></td>
+                        <td><input type="text" name="creditHours1"></td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <h1>Inter-Semester/Third Semester</h1>
+            <table id="Inter-semester">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Credit Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                    <tr>
+                        <td>
+                            <select name="courseTitle1">
+                                <option value=""></option>
+                                <option value="CNSG502">CNSG502</option>
+                                <option value="NURS602">NURS602</option>
+                                <option value="NURS643">NURS643</option>
+                                <option value="NURS612">NURS612</option>
+                                <option value="NURS621">NURS621</option>
+                                <option value="DEST53B">DEST53B</option>
+                                <option value="BIOL075">BIOL075</option>
+                                <option value="SOC1121">SOC1121</option>
+                                <option value="SWMD275">SWMD275</option>
+                                <option value="CHEM442">CHEM442</option>
+                                <option value="AGRI105">AGRI105</option>
+                                <option value="MATH340">MATH340</option>
+                                <option value="MATH358">MATH358</option>
+                                <option value="ANSC223">ANSC223</option>
+                              </select>
+                        </td>
+                        <td>
+                          <select name="courseTitle1">
+                            <option value=""></option>
+                            <option value="Education and Counseling">Education and Counseling</option>
+                            <option value="Health Assessment">Health Assessment</option>
+                            <option value="Occupational Health">Occupational Health</option>
+                            <option value="Pharmacology for Nurses">Pharmacology for Nurses</option>
+                            <option value="Dermatology for Nurses">Dermatology for Nurses</option>
+                            <option value="Community-based Organizations">Community-based Organizations</option>
+                            <option value="Introduction to Biostatistics">Introduction to Biostatistics</option>
+                            <option value="Introduction to Sociology">Introduction to Sociology</option>
+                            <option value="Marriage Dynamics and Growth">Marriage Dynamics and Growth</option>
+                            <option value="Nucleic Acids and Recombinant DNA">Nucleic Acids and Recombinant DNA</option>
+                            <option value="Principles of Agricultural Technology">Principles of Agricultural Technology</option>
+                            <option value="Real Analysis II">Real Analysis II</option>
+                            <option value="Ruminant and Non Ruminant">Ruminant and Non Ruminant</option>
+                            <option value="Ruminant Nutrition and Growth">Ruminant Nutrition and Growth</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="creditHours1">
+                            <option value=""></option>
+                            <option value="1.0">1.0</option>
+                            <option value="2.0">2.0</option>
+                            <option value="3.0">3.0</option>
+                          </select>
+                        </td>
+                      </tr>
+                   
+                    <!-- <tr>
+                        <td><input type="text" name="course2"></td>
+                        <td><input type="text" name="courseId2"></td>
+                        <td><input type="text" name="creditHours2"></td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <br>
+            <hr>
+            <!-- <div>
+                <h1>Your Documents</h1>
+                <div class="form-group">
+                    <label for="cert">KCSE Original Certificate</label>
+                     <br>
+                     <input type="file" name="cert" id="">
+                </div>
+            </div>
+            <hr> -->
+            <div>
+                <h1>Your Contacts</h1>
+                <div class="form-group">
+                    <label for="course">Home Address</label>
+                     <br>
+                    <input type="text" id="Home-Address">
+                </div>
+                <div class="form-group">
+                    <label for="course">Phone</label>
+                    <input type="text" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="courseId">Email</label>
+                    <input type="text" value="" id="your-email">
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h1>Parents Contacts</h1>
+                <div class="form-group">
+                    <label for="course">Home Address</label>
+                     <br>
+                    <input type="text" value="" id="HomeAddressParents">
+                </div>
+                <div class="form-group">
+                    <label for="course">Phone</label>
+                    <input type="text" id="ParentsPhone">
+                </div>
+                <div class="form-group">
+                    <label for="courseId">Email</label>
+                    <input type="text" id="parentsEmail">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="button" value="Submit" id="SubmitGraduation">
+            </div>
+            <div id="error-message" style="color: red;"></div>
+            <div id="success-message" style="color: green;"></div>
+        </div>
+        </form>
+    </section>
+    <footer>
+        <div class="quick-links">
+            <h2>Quick Links</h>
+            <h6><a href="home.html">Home</a></h6>
+            <h6><a href="/graduation.html">Graduation</a></h6>
+            <h6><a href="/supp.html">Supplementary</a></h6>
+        </div>
+       
+        <p >&copy; 2023 University of Eastern Africa, Baraton</p>
+        <div>
+            <h3> © 2023 UEAB</h3>
+            <h3>All rights reserved.</h3>
+            <h3>Eldoret, Kenya 5912</h3>
+        </div>
+    </footer>
+</body>
+</html>
